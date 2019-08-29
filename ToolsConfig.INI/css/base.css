@@ -1,0 +1,257 @@
+/* 默认样式设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form,
+ul,
+ol,
+dl,
+dd,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline-style: none;
+    outline-width: 0pt;
+    resize: none;
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 1em;
+    margin: 0;
+    font-family: tahoma, arial, simsun, sans-serif;
+    color: #484848;
+}
+
+body {
+    background: #f5f5f5
+}
+
+.container,
+.footer {
+    width: 855px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------页面主内容容器部分 ----------*/
+.container {
+    background: #fff;
+    /* height: 466px; */
+    margin: 60px auto;
+}
+
+/* ---------logo部分---------- */
+.logo {
+    background: url(../images/nubia-logo.png) no-repeat;
+    background-position: 0 -55px;
+    width: 156px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    top: 15px;
+    /* border:1px solid #000; */
+}
+
+/* -------form部分---------- */
+.container form {
+    /* background: skyblue; */
+    /* width: 370px; */
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+/* ----------navTab-----------*/
+.navTab {
+    font-size: 18px;
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* ----------navCon-----------*/
+.navCon dl {
+    position: relative;
+    font-size: 12px;
+    color: #757575;
+}
+
+.navCon dl dd {
+    /* position: relative; */
+    font-size: 12px;
+    height: 50px;
+    width: 364px;
+    margin: 20px auto;
+}
+
+.navCon dl dd input {
+    width: 360px;
+    height: 50px;
+    border: 1px solid#e0e4e7;
+    padding: 8px;
+    /* float: left; */
+}
+
+.navCon dl dd .error_tips,
+.btn-mobile-code,
+.btn-email-code {
+    position: absolute;
+    display: inline-block;
+    /* float: right; */
+    line-height: 50px;
+
+    /* word-break: normal; */
+    /* word-wrap:break-word; */
+}
+
+.navCon dl dd .error_tips {
+    color: #e8380d;
+    margin-left: 8px;
+    display: none;
+}
+
+.navCon dl dd #mobileValidateCode,
+.navCon dl dd #emailValidateCode {
+    width: 260px;
+    margin: 0;
+    /* padding: 0; */
+    /* 为了让获取验证码按钮与其前边的input无缝贴合,这里用浮动 */
+    float: left;
+    /* left:370px; */
+}
+
+.navCon dl dd #btn-mobile-code,
+.navCon dl dd #btn-email-code {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    left: 290px;
+    border: none;
+    /* float: left; */
+    border-top: 1px solid #e0e4e7;
+    border-right: 1px solid #e0e4e7;
+    border-bottom: 1px solid #e0e4e7;
+    background: #fff;
+}
+
+.navCon dl dd .verify {
+    background: url(../images/yzm.png) -10px -15px;
+    width: 80px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    left: 606px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* ----------formfooter-----------*/
+.formfooter {
+    font-size: 14px;
+    color: #666666;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.formfooter p a:hover {
+    text-decoration: underline;
+}
+
+.buttons .btn {
+    width: 360px;
+    height: 50px;
+    background: #e8380d;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* ------------页面底部------------- */
+.footer {
+    height: 20px;
+    /* background: green; */
+
+}
+
+.footer-copyright {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-info {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-info a:nth-child(1):hover {
+    text-decoration: underline;
+    color: #000;
+}

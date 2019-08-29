@@ -1,0 +1,24 @@
+
+/* ------------页面主内容容器部分 ----------*/
+
+/* -------form部分---------- */
+
+    /* ----------navTab-----------*/
+
+    /* ----------navCon-----------*/
+
+    /* ----------formfooter-----------*/
+    .formfooter p a,.safe #theAgreement a{
+        color: #e8380d
+    }
+    .safe #theAgreement a:hover{
+        text-decoration: underline;
+    }
+
+/* ------------验证部分------------- */
+.verify{
+    background: blue;
+}
+
+
+

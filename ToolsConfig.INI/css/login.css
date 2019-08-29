@@ -1,0 +1,66 @@
+/* ------------页面主内容容器部分 ----------*/
+
+    /* -------form部分---------- */
+    
+    /* ----------navTab-----------*/
+    .navTab .on{
+        color: #e8380d;
+    }
+    
+    /* ----------navCon-----------*/
+    
+     /* ----------formfooter-----------*/
+     
+    .formfooter p a:first-child{
+        color: #e8380d
+    }
+    .formfooter p a:last-child{
+        color: #000;
+    }
+    .formfooter p span{
+        color: #ddd5d5;
+        margin: 0 8px;   
+    }
+
+    .third-login{
+        margin-top: 20px;
+        
+    }
+    .third-login span{
+        margin-right: 5px; 
+    }
+    .third-login .login-rem a{
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        margin-left: 10px;
+        line-height: 50px;
+        /* text-align: center; */
+        vertical-align: middle;
+
+        /* float: right; */
+    } 
+    .third-login .login-rem .qq{
+        background: url(../images/third_login.png) no-repeat -1px -1px;
+    }
+    .third-login .login-rem .weibo{
+        background: url(../images/third_login.png) no-repeat -30px -1px;
+    }
+    .third-login .login-rem .alipay{
+        background: url(../images/third_login.png) no-repeat -88px -1px;
+    }
+    .third-login .login-rem .wx{
+        background: url(../images/third_login.png) no-repeat -59px -1px;
+    }
+    .third-login .login-rem .qq:hover{
+        background: url(../images/third_login.png) no-repeat -1px -30px;
+    }
+    .third-login .login-rem .weibo:hover{
+        background: url(../images/third_login.png) no-repeat -30px -30px;
+    }
+    .third-login .login-rem .alipay:hover{
+        background: url(../images/third_login.png) no-repeat -88px -30px;
+    }
+    .third-login .login-rem .wx:hover{
+        background: url(../images/third_login.png) no-repeat -59px -30px;
+    }

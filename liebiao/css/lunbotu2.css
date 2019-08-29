@@ -1,0 +1,264 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+ ul,ol{list-style: none;}
+.lxr-t{
+	height: 464px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.lxr-t ul {
+	position: relative;
+}
+.lxr-t ul li a img{
+	position: absolute;
+	display: block;
+    top: 0;
+	left: 50%;
+    width: 1920px;
+    height: 464px;
+	margin-left: -960px;	
+}
+.lxr-dd{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+    left: 0px;
+    top: 435px;
+    width: 100%;
+        }
+.lxr-dd li{
+	float: left;
+	width: 4px;
+	height: 4px;
+	margin: 0 13px;
+	outline:0;
+	text-align: center;
+	border-radius: 50%;
+	border:1px #999 solid;
+	cursor: pointer;
+	background-color: #999;
+}
+/* 轮播图小豆豆 */
+.lxr-dd li.current{
+	width: 7px;
+	height: 7px;
+	border:2px red solid;
+	background: transparent;
+}
+#lxr-big #zl {
+	background-color: #fff;
+    overflow: hidden;
+    width: 1200px;
+    margin: auto;
+    color: #cccccc;
+}
+}
+#lxr-big #zl ul{
+	width: 100% !important;
+	display: block;
+	margin: auto;
+	
+}
+#lxr-big #zl ul li{
+	display: block;
+    padding: 15px 0;
+	box-sizing: border-box;
+    border-bottom: 1px #f1f1f1 solid;
+}
+#lxr-big #zl ul li a{
+	display: inline-block;
+    padding: 0 10px;
+    color: #999899;
+    font-size: 14px;  
+	border-left: 1px #ccc solid;
+    transition: color .3s ease-in-out;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 100;
+}
+#lxr-big #zl ul li a:hover{
+	color: red;
+}
+#lxr-big #sp{
+	width: 100%;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+
+#lxr-big #sp #sp1{
+	width: 1200px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+	list-style: none;
+}
+#lxr-big #sp2{
+	margin-left: -13px;
+	margin-top: -10px;
+	padding-top: 10px;
+	list-style: none;
+}
+#lxr-big #sp2 a{
+	color: #999;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0 none;
+}
+#lxr-big #sp2 ul{
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+#lxr-big #sp2 ul li{
+	width: 290px;
+	text-align: center;
+    height: 450px;
+	float: left;
+    margin-left: 13px;
+    background: #f4f3ef;
+    margin-bottom: 13px !important;
+}
+#lxr-xq{
+	height: 382px;
+	position: relative;
+}
+#lxr-tp{
+	height: 248 !important;
+	margin-top: 54px;
+	
+}
+
+#lxr-tp img{
+	width: 85%;
+	position: relative;
+	top: 0px;
+	
+}
+#lxr-tpxq{
+	margin-top: 10px;
+    line-height: 24px;
+    overflow: hidden
+	
+}
+#lxr-tpxq h2{
+	font-size: 16px;
+    color: #222;
+    font-weight: normal;
+}
+#lxr-jg sup{
+	font-size: 14px !important;
+    line-height: 32px !important;
+	vertical-align: middle;
+	
+}
+#lxr-jg{
+	text-align: center;
+    padding: 0;
+    left: 0;
+    bottom: 32px;
+    position: absolute;
+    width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+}
+#lxr-jg sup{
+	display: inline-block;
+	font-size: 14px !important;
+	font-weight: 100;
+}
+#lxr-jg label{
+	font-size: 16px;
+    font-weight: bold;
+	vertical-align: middle;
+} 
+#lxr-jg span{
+	color: red;
+}
+#lxr-gm{
+	width: 100%;
+    position: absolute;
+    bottom: 32px;
+    text-align: center;
+    display: none;
+}
+#lxr-gm button{
+	background:#D43F3A;
+    color: #fff ;
+	width: 116px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: none;
+    border-radius: 16px;
+	margin: 0 6px;
+    display: inline-block;
+	cursor: pointer;
+    outline: 0 none;
+}
+#lxr-ml{
+	background: #f4f3ef;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	display: none;
+	margin-top:-50px ;
+}
+
+/* 公共部分 */
+#o-server{
+	width: 100%;
+	background: #f4f3ef;
+	height: 158px;
+	padding-top: 27px;
+}
+#server{
+				width: 1000px;
+				height: 108px;
+				background: white;
+				margin: 0px auto;
+			}
+			.server{
+				padding: 30px 0;
+			}
+			#server ul{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+			}
+			
+			#server li{
+				flex-grow:1 ;
+				display: inline-block;
+				height: 100%;
+				text-align: center;
+				line-height: 48px;
+				border-right: 1px solid #d9d9d9;
+			}
+			#server ul li:last-child{
+				border-right: none;
+				color: red;
+			}
+			#server li a{
+				display: block;
+				color: #666;
+				text-align: center;
+				height: 48px;
+				line-height: 48px;
+				cursor: pointer;
+			}
+			#server li a i{
+				font-size: 48px;
+				text-align: center;
+				height: 48px;
+				line-height: 48px;
+			}
+			#server li a span{
+				display: inline-block;
+				height: 48px;
+				line-height: 48px;
+				vertical-align: middle;
+				margin-top: -27px;
+			}

@@ -1,0 +1,785 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="./css/public.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/com.css"/>
+<link rel="stylesheet" href="css/RegionalChoice.css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+
+
+<style type="text/css">
+    .show{width:600px; height:auto;  float: left;}
+    .item{background:#fff; width:600px; height:auto; float:left; margin:15px;}
+   /* p{ padding:15px; color:#ff6600} */
+    .big-photo img{ width:100%; height:100%; /* border:1px solid #e0e0e0 */}
+    .des-small img{ width:100px; height:100px;border:1px solid #e0e0e0; margin: 0 20px;/* margin-left: 40px; */ }
+    .des-small img:hover{ border:1px solid #ff6600}
+    .clear{clear:both}
+</style>
+<style type='text/css'>
+	*{ margin:0; padding:0;}
+	#wrap1{
+		width:600px;
+		height:400px;
+		margin:50px auto;
+	    float: right;
+		/* margin-right: 100px; */
+	}
+	.price{
+		width: 600px;
+		height: 360px;
+		background: #f8f8f8;
+		
+	}
+	#top{
+		width:600px;
+		/* height:220px; */
+		border-bottom:1px solid #bbb;
+		font-family:'Microsoft yahei';
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	#top p{
+		margin-bottom:15px;
+	}
+	#top p font{
+		font-size:14px;
+		color:#000;
+		margin-right:15px;
+	}
+	#top p span{
+		font-size:14px;
+		color:#666;
+		border:1px solid #999;
+		display:inline-block;
+		padding:8px;
+		cursor:pointer;
+		border-radius: 6px;
+		width: 160px;
+		text-align: center;
+		
+	}
+	#top p span.on{
+		color: #eb5b65;
+		border-radius: 6px;
+		border:1px solid #eb5b65;
+		padding:7px;
+		background:url(images/on.png) no-repeat right bottom;
+		width: 160px;
+		text-align: center;
+		
+	}
+	#bottom{
+		width:600px;
+		height:159px;
+		padding-top:20px;
+		font-family:'Microsoft yahei';
+	}
+	.price{
+		padding-top: 30px;
+		padding-left: 20px;
+		border-bottom:1px solid #bbb;
+	}
+	.price p font{
+		color:#eb5b65;
+		font-size:28px;
+		margin-right:20px;
+	}
+	#total{
+		color:#eb5b65;
+		font-size:28px;
+		margin-right:20px;
+	}
+	#bottom p a{
+		font-size:14px;
+		color:blue;
+	}
+	#bottom p a i{
+		margin:0 5px;
+		color:#90c;
+	}
+	#bottom button{
+		width:280px;
+		height:50px;
+		font-family:'Microsoft yahei';
+		margin-top:20px;
+		font-size:20px;
+		background:#ff944e;
+		color:#fff;
+		border:none;
+		border-radius: 10px;
+	    
+	}
+	.ri button{
+		width:280px;
+		height:50px;
+		font-family:'Microsoft yahei';
+		margin-top: -120px;
+		font-size:20px;
+		color:#fff;
+		border:none;
+		border-radius: 10px;
+		float: right;
+	}
+	.sm{
+		width: 50px;
+		height: 20px;
+		border: 1px solid #eb5b65;
+		color: #eb5b65;
+		border-radius: 3px;
+		text-align: center;
+		margin-left: 60px;
+		line-height: 30px;
+	}
+	.fix {position: fixed;top: 0px;opacity: 0.8;}
+</style>
+</head>
+<body>
+	<!-- 头部 -->
+	 <div id="wrap">
+	     <div id="head">
+	         <div id="logo">
+	             <a href="#">
+	                 <img src="images/nubia-logo_02.png" alt="">
+	             </a>
+	         </div>
+	         <div id="list">
+	             <ul>
+	                 <li><a href="#">商城</a></li>
+	                 <li>
+	                     <a href="#">手机</a>
+	                     <!-- 首页导航鼠标移入手机列表 -->
+	                     <div id="details_sj">  
+	                         <div id="details_01">
+	                             <ul>
+	                                 <li><a href=""><span class="glyphicon glyphicon-menu-left"></span></a><a href=""><img src="images/huang1.png" /><span>Z20</span></a></li>
+	                                 <li><a href=""><img src="images/huang2.png" /><span>红魔3</span></a></li>
+	                                 <li><a href=""><img src="images/huang3.png" /><span>努比亚阿尔法</span></a></li>
+	                                 <li><a href=""><img src="images/huang4.png" /><span>红魔Mars</span></a></li>
+	                                 <li><a href=""><img src="images/huang5.png" /><span>X</span></a></li>
+	                                 <li><a href=""><img src="images/huang6.png" /><span>Z18</span></a></li>
+	                                 <li><a href=""><img src="images/huang7.png" /><span>Z18mini</span></a></li>
+	                                 <li><a href=""><i class="icon-plus"></i><p style="margin-top: 45px;">查看所有</p><p>手机</p></a><a href=""><span class="glyphicon glyphicon-menu-right"></span></a></li>
+	                             </ul>
+	                         </div>
+	                     </div>
+	                 </li>
+	                 <li>
+	                     <a href="#">红魔手机</a>
+	                     <!-- 首页导航鼠标移入红魔手机列表 -->
+	                     <div id="details_hmsj">
+	                         <div id="details_hmsj_01">
+	                             <ul>
+	                                 <li><a href=""><span class="glyphicon glyphicon-menu-left"></span></a><a href=""><img src="images/huang2.png" /><span>红魔3</span></a></li>
+	                                 <li><a href=""><img src="images/huang4.png" /><span>红魔Mars</span></a></li>
+	                             </ul>
+	                             <a href=""><span class="glyphicon glyphicon-menu-right"></span></a>
+	                         </div>
+	                     </div>
+	                 </li>
+	                 <li>
+	                     <a href="#">配件</a>
+	                     <!-- 首页导航鼠标移入配件列表 -->
+	                     <div id="details_pj">
+	                         <div id="details_pj_01">
+	                             <ul>
+	                                 <li><a href=""><span class="glyphicon glyphicon-menu-left"></span></a><a href=""><i class="icon-case"></i><span>保护套</span></a></li>
+	                                 <li><a href=""><i class="icon-earphones"></i><span>耳机</span></a></li>
+	                                 <li><a href=""><i class="icon-cable"></i><span>数据线</span></a></li>
+	                                 <li><a href=""><i class="icon-peripheral"></i><span>周边产品</span></a></li>
+	                                 <li><a href=""><i class="icon-plus"></i><p style="margin-top: 22px;">查看所有</p><p>配件</p></a></li>
+	                             </ul>
+	                             <a href=""><span class="glyphicon glyphicon-menu-right"></span></a>
+	                         </div>
+	                     </div>
+	                 </li>
+	                 <li>
+	                     <a href="#">摄影</a>
+	                     <!-- 首页导航鼠标移入摄影列表 -->
+	                     <div id="details_sy">
+	                         <div id="details_sy_01">
+	                             <ul>
+	                                 <li><a href=""><img src="images/NeoVision.png" /></i><span>努比亚摄影引擎</span></a></li>
+	                                 <li><a href=""><i class="icon-gallery"></i><span>摄影长廊</span></a></li>
+	                                 <li><a href=""><i class="icon-fill_timelapse"></i><span>延时摄影</span></a></li>
+	                                 <li><a href=""><i class="icon-starphone"></i><span>星空之约</span></a></li>
+	                             </ul>
+	                         </div>
+	                     </div>
+	                 </li>
+	                 <li><a href="#">服务</a></li>
+	                 <li><a href="#">体验店</a></li>
+	                 <li><a href="#">社区</a></li>
+	                 <li>
+	                     <a href="#">nubia UI</a>
+	                     <!-- 首页导航鼠标移入nubia UI列表 -->
+	                     <div id="details_ui">
+	                         <div id="details_ui_01">
+	                             <ul>
+	                                 <li><a href=""><img src="images/UI6.0.png" /><span>nubia UI 6.0</span></a></li>
+	                                 <li><a href=""><i class="icon-circle_arrow-down5"></i><span>ROM下载</span></a></li>
+	                                 <li><a href=""><i class="icon-message"></i><span>UI社区</span></a></li>
+	                                 <li><a href=""><i class="icon-cloud-transfer"></i><span>云服务</span></a></li>
+	                                 <li><a href=""><i class="icon-tools"></i><span>应用</span></a></li>
+	                             </ul>
+	                         </div>
+	                     </div>
+	                 </li>
+	             </ul>
+	         </div>
+	         <div id="search">
+	             <input type="text" placeholder="红魔3">
+	             <span class="glyphicon glyphicon-search" id="search_icon"></span>
+	         </div>
+	         <div id="user">
+	             <div id="user_my" class="user_move">
+	                 <a>
+	                     <span class="glyphicon glyphicon-user" id="user_myself"></span>
+	                 </a>
+	                 <!-- 用户中心 -->
+	                 <div id="user_home">
+	                     <a href="">立即登录</a><br />
+	                     <p>没有账号?<a href="">立即注册</a></p>
+	                     <ul>
+	                         <li><a href=""><span class="icon-home mhm"></span>个人中心</a></li>
+	                         <li><a href=""><span class="icon-gift mhm"></span>我的订单</a></li>
+	                         <li><a href=""><span class="icon-card mhm"></span>我的优惠卷</a></li>
+	                         <li><a href=""><span class="icon-star mhm"></span>我的收藏</a></li>
+	                         <li><a href=""><span class="icon-clock mhm"></span>我的预约</a></li>
+	                         <li><a href=""><span class="icon-mail mhm"></span>收货地址</a></li>
+	                     </ul>
+	                     <div class="san_par1"></div>
+	                     <div id="sanjiao"></div>
+	                 </div>
+	             </div>
+	             <div id="user_gwc" class="user_move">
+	                 <a>
+	                     <span class="glyphicon glyphicon-shopping-cart" id="gwc"></span>
+	                 </a>
+	                 <!-- 购物车 -->
+	                 <div id="gwc_content">
+	                     <i class="icon-caddie"></i>
+	                     <p>您的购物车还是空的,赶紧行动吧!</p>
+	                     <div class="san_par2"></div>
+	                     <div id="sanjiao"></div>
+	                 </div>
+	             </div>
+	             
+	         </div>
+	     </div>
+	 </div>
+	
+	
+	
+	<!-- 展示盒 -->
+	<div id="bigg" style="height: 1100px;border-bottom:1px solid #bbb;">
+		
+	
+	<div class="show">
+	   <div class="nav" style="margin-top: 20px;padding-left:60px;">
+	   				<a href="#">首页</a> &nbsp;/&nbsp;
+	   				<a href="#">配件&nbsp;/&nbsp;</a> 
+	   				<a href="#">手机&nbsp;/&nbsp;</a> 
+	   			</div>
+	    <div class="item">
+	        <a class="big-photo">
+	            <img src="images/o1.png" alt="big"/>
+	        </a>
+	        <a class="des-small">
+	            <img src="images/o1.png" alt="small"/>
+	        </a>
+	        <a class="des-small">
+	            <img src="images/o2.png" alt="small"/>
+	        </a>
+	        <a class="des-small">
+	            <img src="images/o3.png" alt="small"/>
+	        </a>
+			<a class="des-small">
+			    <img src="images/o4.png" alt="small"/>
+			</a>
+	    </div>
+	    <div class="clear"></div>
+	</div>
+	<!-- 属性页 -->
+
+<div id="wrap1">
+	<input id=txt style="width: 400px; height: 60px;font-size: 30px;border: none;" type=text value=""/>
+	<p style="color: #eb5b65;font-size: 20px;font-weight: bold;">骁龙855、5000mAH大电池</p>
+	<div class="price">
+		<p>价&nbsp;&nbsp;&nbsp;&nbsp;格 <font>￥<span id='price'>5288</span>.00</font></p><br/>
+		        <span class="sm">分期</span>&nbsp;&nbsp;享受花呗3期,6期,12期分期<br/>
+				 <span class="sm">积分</span>&nbsp;&nbsp;购买即赠积分，积分可抵现<br/>
+				 <span class="sm">包邮</span>&nbsp;&nbsp;青铜及以下满59、白银满39、黄金及以上包邮<br/><br/>
+		<p>地&nbsp;&nbsp;&nbsp;&nbsp;址  &nbsp;&nbsp;&nbsp;&nbsp;</p>
+	
+	<div class="form-group" style="margin-left: 60px;">
+		<div class="col-sm-9 col-xs-12">
+			<div id="areas" class="form-control-static glyphicon glyphicon-map-marker"></div>
+			<a href="javascript:;" class="btn btn-default" data-toggle="modal" data-target="#myModal">请选择地址 </a>
+			<input type="hidden" id="selectedareas" name="edareas" value="">	
+	    </div>
+	</div>
+	
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						选择区域
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="test-div">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+					<button type="button" class="btn btn-primary btntest1">
+						确定
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/RegionalChoice.js"></script>
+	<script>
+	$(function () {
+		//------生成地区
+		GetRegionPlug();
+		//------选择后确定按钮
+		$(".btntest1").click(function () {
+			var areas = GetChecked().join(",");//已选择的城市名
+			$("#areas").html(areas);//显示在页面
+			$("#selectedareas").val(areas);//存入隐藏的input
+			$('#myModal').modal('hide');//完后隐藏模态框
+		})
+	})
+	</script>
+
+	
+		<p style="text-indent: 50px;"><span style="color: #eb5b65;" class="glyphicon glyphicon-calendar">现货</span> 11:00前下单，预计8月28日18:00点前送达</p>
+	</div>
+	
+	<div id="top">
+		<p id='model'>
+			<font>选择型号</font>
+			<span>4.7英寸</span>
+			<span>5.5英寸</span>
+		</p>
+		<p id='color'>
+			<font>选择颜色</font>
+			<span class="on">银色</span>
+			<span>金色</span>
+			<span>深空灰色</span>
+		</p>
+		<p id='rom'>
+			<font>选择内存</font>
+			<span>16GB</span>
+			<span>64GB</span>
+			<span>128GB</span>
+		</p>
+		<p id='banben'>
+			<font>选择版本</font>
+			<span>公开版</span>
+			<span>移动赠费版</span>
+			<span>联通合约版</span>
+		</p>
+		<p id='yw'>
+			<font>意外保险</font>
+			<span>护屏宝(半年内保修1次)<br/>¥119.00</span>
+			<span>护屏宝（1年内保修1次<br/>¥179.00</span>
+		</p>
+		<p id="hb">
+			<font>花呗分期</font>
+			<span>￥1022.66*3<br/>含￥68.98手续费</span>
+			<span>￥499.83*6<br/>含￥0.00手续费</span>
+			<span>￥268.66*12<br/>含￥224.93手续费</span>
+			
+		</p>
+		<p id="count">
+			<font>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</font>
+			<input id="min" type="button" style="width: 60px;height: 30px;" value="-" />    
+			<input id="quantity" type="button" style="width: 60px;height: 30px;" value="1" />    
+			<input id="add" type="button" style="width: 60px;height: 30px;" value="+" />
+		</p>
+		<p><font>总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价</font><label id="total"></label></p> 
+	</div>
+	<div id="bottom">
+		
+		<button>立即购买</button>
+		
+	</div>
+	<div class="ri">
+		<button style="background:#fe5e5e;">加入购物车</button>
+	</div>
+</div>
+
+      <!-- 展示图片 -->
+<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+<script type="text/javascript">
+    $(function() {
+        /** 更换小图片 */
+        $(".item a").hover(function(){
+            changeImg($(this))
+        }); 
+    });
+    function changeImg(obj){
+        if(obj.find("img").attr("alt")=="small"){
+            var temp_big_src = obj.siblings('a').find('img[alt=big]').attr('src');
+            var temp_big_url = obj.siblings('a[class=big-photo]').attr('href');
+            var temp_small_src = obj.find('img').attr('src');
+            var temp_small_url = obj.attr('href');
+            obj.siblings('a').find('img[alt=big]').attr('src',temp_small_src);
+        }
+    }
+</script>
+    <!-- 属性规格 -->
+	<script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+	var mSpan = document.getElementById('model').getElementsByTagName('span');
+	var cSpan = document.getElementById('color').getElementsByTagName('span');
+	// console.log(cSpan);
+	var rSpan = document.getElementById('rom').getElementsByTagName('span');
+	var bSpan = document.getElementById('banben').getElementsByTagName('span');
+	var aSpan = document.getElementsByTagName('span');
+	var oModel = document.getElementById('model');
+	var oRom = document.getElementById('rom');
+	var oPrice = document.getElementById('price');
+
+	mSpan[0].className = 'on';
+	//cSpan[0].className = 'on';
+	rSpan[0].className = 'on';
+	bSpan[0].className = 'on';
+	var col='';
+	col=$("#color span")[0].innerHTML;
+	var neicun='';
+	neicun=$("#rom span")[0].innerHTML;
+	$('#txt').val('红魔Mars'+neicun+col);
+	$("#color span").click(function(){
+		this.className="on";
+		$(this).siblings().attr("class","");
+		col = $(this).text().trim()
+		console.log(col);
+		$('#txt').val('红魔Mars'+neicun+col);
+		
+	})
+	$("#rom span").click(function(){
+		this.className="on";
+		$(this).siblings().attr("class","");
+		neicun = $(this).text().trim()
+		console.log(neicun);
+		$('#txt').val('红魔Mars'+neicun+col);
+		price();
+
+	})
+	$('#model span').click(function(){
+		this.className="on";
+		$(this).siblings().attr("class","");
+		price();
+
+	})
+	$('#banben span').click(function(){
+		this.className="on";
+		$(this).siblings().attr("class","");
+	})
+	$('#yw span').click(function(){
+		this.className="on";
+		$(this).siblings().attr("class","");
+	})
+	$('#hb span').click(function(){
+		this.className="on";
+		$(this).siblings().attr("class","");
+	})
+	
+	
+	
+	
+// 	for (let i=0;i<aSpan.length;i++ )
+// 	{
+// 		
+// 		aSpan[i].onclick = function(){
+// 			var siblings = this.parentNode.children;
+// 			for (let j=0;j<siblings.length;j++ )
+// 			{
+// 				siblings[j].className = '';
+// 			}
+// 			this.className = 'on';
+// 			
+// 			if ( this.parentNode == oModel || this.parentNode == oRom )
+// 			{
+// 				price();
+// 			}
+// 		};
+// 	};
+
+	var price = function price(){
+		var p1 = 0;
+		var p2 = 0;
+		for (var i=0;i<mSpan.length;i++ )
+		{
+			console.log(11111111111);
+			if ( mSpan[i].className == 'on' )
+			{
+				p1 = i?6088:5288;
+				break;
+			};
+		};
+		for (var i=0;i<rSpan.length;i++ )
+		{
+			console.log(5555555555);
+			if ( rSpan[i].className == 'on' )
+			{
+				switch ( i )
+				{
+					case 0:
+						p2 = 0;
+						break;
+					case 1:
+						p2 = 800;
+						break;
+					case 2:
+						p2 = 1600;
+						break;
+				}
+			}
+		};
+		oPrice.innerHTML = p1+p2;
+		setTotal();
+	};
+	var t = $("#quantity");    
+	$("#add").click(function(){    
+	    t.val(parseInt(t.val())+1);    
+	    $("#min").removeAttr("disabled");                 //当按加1时，解除$("#min")不可读状态    
+	    setTotal();    
+	})    
+	$("#min").click(function(){    
+	           if (parseInt(t.val())>1) {                     //判断数量值大于1时才可以减少    
+	            t.val(parseInt(t.val())-1)    
+	            }else{    
+	            $("#min").attr("disabled","disabled")        //当$("#min")为1时，$("#min")不可读状态    
+	           }    
+	    setTotal();    
+	})    
+	function setTotal(){    
+	    $("#total").html((parseInt(t.val())*oPrice.innerHTML).toFixed(2));    
+	}    
+	setTotal(); 
+</script>
+    <!-- 计算总价 -->
+ </div>
+ 
+  <!--  中间 -->
+ <div id="header">
+ 	<div class="nav1">
+ 			<ul>
+ 				<li  class="pi"><a href="#">红魔 3</a></li>
+ 				
+ 				<li><a href="RNG.html" target="_blank">GNG六周年</a></li>
+ 			</ul>		
+     </div>
+ 	<div class="nav3">
+ 	 	
+ 	 	 	<div class="na"><a href="#">立即购买</a></div>
+ 	 		<div class="na"><a href="#">附近的店>></a></div>
+ 	 	
+ 	</div>
+ 	<div class="nav2">
+ 		 <ul>
+ 		 	<li><a href="#">概述</a></li>
+ 		 	<li><a href="#">技术规格</a></li>
+ 		 	<li><a href="#">产品展示</a></li>
+ 			<li><a href="#">NB码通道</a></li>
+ 			<li><a href="#">在线咨询</a></li>
+ 		 </ul>	
+ 	</div>
+ 	
+ </div>	
+ <div id="imgbox">
+ 	<figure><img src="images/5.jpg" ></figure>
+ 	<figure><img src="images/6.jpg" ></figure>
+ 	<figure><img src="images/8.jpg" ></figure>
+ 	<figure><img src="images/a1.jpg" ></figure>
+ 	<figure><img src="images/a2.jpg" ></figure>
+ 	<figure><img src="images/a3.jpg" ></figure>
+ 	<figure><img src="images/a4.jpg" ></figure>
+ 	<figure><img src="images/9.jpg" ></figure>
+ 	<figure><img src="images/10.jpg" ></figure>
+ 	<figure><img src="images/11.jpg" ></figure>
+ </div>
+ <div id="infor">
+ 	<h1>售后服务说明</h1>
+ 	<p>已激活的努比亚手机不支持七天无理由退货。</p>
+ 	<p>由于联网后手机会自动激活，请确认需求后再激活使用。</p>
+ </div>
+ <div id="server">
+ 	<figure><a href="#"><img src="images/s1.png" ></a></figure>
+ 	<figure><a href="#"><img src="images/s2.png" ></a></figure>
+ 	<figure><a href="#"><img src="images/s3.png" ></a></figure>
+ 	<figure><a href="#"><img src="images/s4.png" ></a></figure>
+ </div>
+ 
+ 
+	   <!-- 尾部 -->
+<div id="info">
+        <div id="info_content">
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="">关于nubia</a></dd>
+                <dd><a href="">产品热评</a></dd>
+                <dd><a href="">体验店</a></dd>
+                <dd><a href="">新闻中心</a></dd>
+                <dd><a href="">视频长廊</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">企业购</a></dd>
+                <dd><a href="">友情链接</a></dd>
+                <dd><a href="">合作伙伴</a></dd>
+            </dl>
+            <dl>
+                <dt>手机</dt>
+                <dd><a href="">Z20</a></dd>
+                <dd><a href="">红魔3</a></dd>
+                <dd><a href="">阿尔法</a></dd>
+                <dd><a href="">红魔Mars游戏电竞手机</a></dd>
+                <dd><a href="">X</a></dd>
+                <dd><a href="">Z18</a></dd>
+                <dd><a href="">Z18mini</a></dd>
+            </dl>
+            <dl>
+                <dt>配件</dt>
+                <dd><a href="">保护套</a></dd>
+                <dd><a href="">耳机</a></dd>
+                <dd><a href="">数据线/充电器</a></dd>
+                <dd><a href="">周边产品</a></dd>
+            </dl>
+            <dl>
+                <dt>服务中心</dt>
+                <dd><a href="">个人中心</a></dd>
+                <dd><a href="">售后服务</a></dd>
+                <dd><a href="">售后网点</a></dd>
+                <dd><a href="">特色服务</a></dd>
+                <dd><a href="">软件下载</a></dd>
+                <dd><a href="">产品安全</a></dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd><a href="">官方社区</a></dd>
+                <dd><a href="">新浪微博</a></dd>
+            </dl>
+            <dl>
+                <dt>全国服务热线</dt>
+                <dd><span class="glyphicon glyphicon-earphone" id="phone"></span><a href="">400-700-6600</a></dd>
+                <dd>周一到周日 8:30-20:30</dd>
+                <dd>(全年无休)</dd>
+                <dd><img src="images/kf.png" alt="" id="kefu"></dd>
+            </dl>
+        </div>
+    </div>
+    <footer id="footer">
+        <img src="images/nb-weixin-code-figure.jpg" alt="" style="height: 150px;width: 150px;">
+        <div id="sanjiao"></div>
+        <h1><a href=""><img src="images/nubia-logo_03_02.png" alt=""></a></h1>
+        <p><a href=""><span class="icon-circle_weibo mrs"></span></a><a href=""><span class="icon-circle_wechat mrs"></span></a></p>
+        <p>2012-2019 努比亚技术有限公司 版权所有  &nbsp;|&nbsp;  <a href="">隐私政策  &nbsp;|&nbsp;  </a><a href="">关于Cookie</a>&nbsp;&nbsp;<a href=""><img src="images/icon2_03.png" alt="">简体中文</a></p>
+        <p><a href=""><img src="images/zg.png" alt=""> &nbsp;粤ICP备10006213号  &nbsp;<img src="images/gswj.jpg" />&nbsp;&nbsp;ICP经营许可证编号：粤B2-20120688&nbsp;&nbsp;<img src="images/zgga.png" />&nbsp;&nbsp;粤公网安备 44030502000309号</a></p>
+        <p><a href=""><img src="images/cnnic.png" alt=""></a></p>
+    </footer>
+	
+	<div id="right_fixed">
+	    <ul>
+	    	<li>
+				<a href="#">
+					<i class="nb-shopCar-ico icon-circle_caddie"></i>
+				</a>
+				<div>
+					<span class="angle">
+					    <i class="b">◆</i>
+					    <i class="t">◆</i>
+					</span>
+					<p>购物车</p>
+				</div>
+			</li>
+			<li>
+				<a href="#">
+					<i class="icon-circle_bag"></i>
+				</a>
+				<div>
+					<span class="angle">
+					    <i class="b">◆</i>
+					    <i class="t">◆</i>
+					</span>
+					<img src="images/027.png" >
+				</div>
+			</li>
+			<li>
+				<a href="#">
+					<i class="nb-service-ico icon-circle_headphones-mic"></i>
+				</a>
+				<div>
+					<span class="angle">
+					    <i class="b">◆</i>
+					    <i class="t">◆</i>
+					</span>
+					<p>在线客服</p>
+				</div>
+			</li>
+			<li class="gotop"><a href="#"><i class="icon-circle_arrow-up"></i></a></li>
+	    </ul>
+	</div>
+</body>
+<script src="./js/jquery1.12.4.js"></script>
+<script src="./js/index.js"></script>
+</html>
+
+
+<script>
+   
+//     for(let i=0;i<cSpan.length;i++){
+//         cSpan[i].onclick=function(){
+//             document.getElementById("txt").value+=this.innerHTML;
+//         }
+//     }
+</script>
+
+ <!-- 吸顶效果 -->
+ <script type="text/javascript">
+         var tit = document.getElementById("header");
+         //alert(tit);
+         //占位符的位置
+         var rect = tit.getBoundingClientRect(); //获得页面中导航条相对于浏览器视窗的位置
+         var inser = document.createElement("div");
+         tit.parentNode.replaceChild(inser, tit);
+         inser.appendChild(tit);
+         inser.style.height = rect.height + "px";
+ 
+         //获取距离页面顶端的距离
+         var titleTop = tit.offsetTop;
+         //滚动事件
+         document.onscroll = function() {
+             //获取当前滚动的距离
+             var btop = document.body.scrollTop || document.documentElement.scrollTop;
+             //如果滚动距离大于导航条据顶部的距离
+             if(btop > titleTop) {
+                 //为导航条设置fix
+                 tit.className = "clearfix fix";
+             } else {
+                 //移除fixed
+                 tit.className = "clearfix";
+             }
+         }
+     </script>
